@@ -13,8 +13,12 @@ based on keys and swaps are made only when required.
 1. Easy to implement
 2. In-place sort (requires no additional storage space)
 
-#### Disadvantages
-3. Doesn’t scale well: O(n2)
+
+### Time Complexity of Selection Sort Algorithm
+> - Worst case complexity : O(n2)
+> - Best case complexity : O(n2)
+> - Average case complexity : O(n2)
+> - Worst case space complexity: O(1) auxiliary
 
 ```
 def selection_sort(arr):
