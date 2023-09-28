@@ -17,6 +17,13 @@ correct position in the already-sorted list until no input elements remain. Sort
 in-place. The resulting array after k iterations has the property where the first k + 1 entries are
 sorted.
 
+### Time Complexity of Insertion Sort Algorithm
+> - Worst case complexity: Θ(n2)
+> - Best case complexity: Θ(n)
+> - Average case complexity: Θ(n2)
+> - Worst case space complexity: O(n2) total, O(1) auxiliary
+
+
 ```
 def insertion_sort(arr):
     # Step 1: Start with the second element (index 1) since the first element (index 0) is considered sorted.
