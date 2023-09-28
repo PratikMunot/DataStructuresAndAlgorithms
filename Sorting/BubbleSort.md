@@ -1,7 +1,12 @@
 # Bubble Sort Algorithm
 
-
-
+Bubble sort is the simplest sorting algorithm. It works by iterating the input array from the first
+element to the last, comparing each pair of elements and swapping them if needed. Bubble sort
+continues its iterations until no more swaps are needed. The algorithm gets its name from the way
+smaller elements “bubble” to the top of the list. Generally, insertion sort has better performance
+than bubble sort. 
+The only significant advantage that bubble sort has over other implementations is that it can detect
+whether the input list is already sorted or not.
 
 ```
 def bubble_sort(arr):
@@ -19,8 +24,6 @@ def bubble_sort(arr):
 my_list = [64, 25, 12, 22, 11]
 bubble_sort(my_list)
 print("Sorted array is:", my_list)
-
-```
 
 ```
 Explanation of each step:
@@ -45,6 +48,26 @@ Finally, after the outer loop completes, the entire array will be sorted, and we
 
 Bubble sort is not the most efficient sorting algorithm, especially for large lists, but it's useful for understanding the basic concept of sorting algorithms.
 
+### Time Complexity of Bubble Sort Algorithm
+> - Worst case complexity : O(n2)
+> - Best case complexity (Optimized version) : O(n)
+> - Average case complexity (Basic version) : O(n2)
+> - Worst case space complexity : O(1) auxiliary
 
+
+#### Optimized Bubble sort Algorithm
+```
+def opt_bubblesort(arr):
+    for i in range(len(arr)):
+        swapped = False
+        for j in range(len(arr)-i-1):
+            if arr[j] > arr[j+1] :
+                arr[j],arr[j+1] = arr[j+1],arr[j]
+                swapped = True
+        if not swapped: break
+
+my_list = [64, 25, 12, 22, 11]
+opt_bubblesort(my_list)
+print("Sorted array is:", my_list)
 ```
 
