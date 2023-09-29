@@ -1,26 +1,24 @@
 # Merge Sort Algorithm
 
-In Merge Sort Algorithm we divide the list into 2 sub parts. These 2 sub-arrays 
+In Merge Sort Algorithm we divide the list into 2 sub parts. These 2 sub-arrays are again passed to merge sort function in recursive manner and then again division of array occurs until only 1 element is left which is already sorted we assume and no further division is possible. Now we start comparing left half array elements to the right half array elements and place the elements in the correct order in original array. This part is also done recursively. Finally we check if any element is left for sorting in left half or right half array.
 
+> - Merge sort is an example of the divide and conquer strategy.
+> - Merging is the process of combining two sorted files to make one bigger sorted file.
+> - Selection is the process of dividing a file into two parts: k smallest elements and n k largest elements.
+> - Selection and merging are opposite operations
+> - selection splits a list into two lists
+> - merging joins two files to make one file
+> - Merge sort is Quick sort’s complement
+> - Merge sort accesses the data in a sequential manner
+> - This algorithm is used for sorting a linked list
+> - Merge sort is insensitive to the initial order of its input
+> - In Quick sort most of the work is done before the recursive calls. Quick sort starts with the largest subfile and finishes with the small ones and as a result it needs stack. Moreover, this algorithm is not stable. Merge sort divides the list into two parts; then each part is conquered individually. Merge sort starts with the small subfiles and finishes with the largest one. As a result it doesn’t need stack. This algorithm is stable.
 
-Merge sort is an example of the divide and conquer strategy.
-• Merging is the process of combining two sorted files to make one bigger sorted file.
-• Selection is the process of dividing a file into two parts: k smallest elements and n k largest elements.
-• Selection and merging are opposite operations
-○ selection splits a list into two lists
-○ merging joins two files to make one file
-• Merge sort is Quick sort’s complement
-• Merge sort accesses the data in a sequential manner
-• This algorithm is used for sorting a linked list
-• Merge sort is insensitive to the initial order of its input
-• In Quick sort most of the work is done before the recursive calls. Quick sort starts
-with the largest subfile and finishes with the small ones and as a result it needs
-stack. Moreover, this algorithm is not stable. Merge sort divides the list into two
-parts; then each part is conquered individually. Merge sort starts with the small
-subfiles and finishes with the largest one. As a result it doesn’t need stack. This
-algorithm is stable.
-Implementation
-
+Time Complexity of Merge sort algorithm
+> - Worst case complexity : Θ(nlogn)
+> - Best case complexity : Θ(nlogn)
+> - Average case complexity : Θ(nlogn)
+> - Worst case space complexity: Θ(n) auxiliary
 
 
 ```
